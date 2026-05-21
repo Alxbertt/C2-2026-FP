@@ -188,9 +188,9 @@
 # num1 = int(input("Introduce un primer numero (Entero): "))
 # num2 = int(input("Introduce un segundo numero (Entero): "))
 # print(f"Suma: {num1 + num2}")
-# print(f"Suma: {num1 - num2}")
-# print(f"Suma: {num1 * num2}")
-# print(f"Suma: {num1 / num2}")
+# print(f"Resta: {num1 - num2}")
+# print(f"Multiplicacion: {num1 * num2}")
+# print(f"Division: {num1 / num2}")
 
 #----------------------------------------------------
 
