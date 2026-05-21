@@ -158,3 +158,87 @@
 # print("-----------------------------")
 # print(f"Ahora primer valor es: {val2}")
 # print(f"Ahora Segundo valor es: {val1} ")
+
+#----------------------------------------------------
+
+#EJERCICIOS DE CONSOLIDACION TIPOS DE DATOS
+
+#Ejercicio 1 
+
+# cadena = "HOLA"
+# numint = 10
+# numfloat = 20.3
+# print(type(cadena))
+# print(type(numint))
+# print(type(numfloat))
+
+#----------------------------------------------------
+
+#Ejercicio 2
+
+# numc1 = input("Escribe un primer numero: ")
+# numc2 = input("Escribe un segundo numero: ")
+# suma = (int(numc1) + int(numc2))
+# print(suma)
+
+#----------------------------------------------------
+
+#Ejercicio 3
+
+# num1 = int(input("Introduce un primer numero (Entero): "))
+# num2 = int(input("Introduce un segundo numero (Entero): "))
+# print(f"Suma: {num1 + num2}")
+# print(f"Suma: {num1 - num2}")
+# print(f"Suma: {num1 * num2}")
+# print(f"Suma: {num1 / num2}")
+
+#----------------------------------------------------
+
+#Ejercicio 4 
+
+# cal1 = float(input("Introduce la primera calificacion: "))
+# cal2 = float(input("Introduce la primera calificacion: "))
+# cal3 = float(input("Introduce la primera calificacion: "))
+# print(f"El promedio es: {(cal1+cal2+cal3) / 3}")
+
+#----------------------------------------------------
+
+#Ejercicio 5    
+
+# CONVERSORAKM = 1.60934
+# millasd = int(input("Ingrese una distancia en millas: "))
+# print(f"El equivalente en km es: {millasd * CONVERSORAKM}")
+
+#----------------------------------------------------
+
+#Ejercicio 6
+
+# nombre = input("Ingresa tu nombre: ")
+# edad = int(input("Ingresa tu edad: "))
+# print(f"Hola {nombre}, tienes {edad} de edad")
+
+#----------------------------------------------------
+
+#Ejercicio 7
+
+# num1 = int(input("Ingrese un primer numero: "))
+# num2 = int(input("Ingrese un segundo numero: "))
+# print(f"El entero es: {num1//num2} y el resto de la division es {num1%num2}")
+
+#----------------------------------------------------
+
+#Ejercicio 8
+
+# total = float(input("Ingrese un numero total: "))
+# porcentaje = float(input("Ingrese un porciento a sacar: "))
+# print(f"El {porcentaje}%, de {total} es: {(total * porcentaje) / 100}")
+
+#----------------------------------------------------
+
+#Ejercicio 9
+
+# TEMPFCONS = 9/5
+# TEMPFCONSAJUSTE = 32
+# TempC = int(input("Ingrese una temperatura en grados celcius: "))
+# tempF = (TempC * 9/5) + 32
+# print(f"El equivalente en Fahrenheit es: {tempF} F")
