@@ -242,3 +242,10 @@
 # TempC = int(input("Ingrese una temperatura en grados celcius: "))
 # tempF = (TempC * 9/5) + 32
 # print(f"El equivalente en Fahrenheit es: {tempF} F")
+
+# import os 
+# os.system("cls")
+
+# hola = 2.2690
+# print(round(hola, 2))
+#----------------------------------
