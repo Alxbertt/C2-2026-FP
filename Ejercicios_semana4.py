@@ -220,3 +220,56 @@ os.system("cls")
 #     print('PADRE')
 # else: 
 #     print('HIJO')
+
+#------------------------------------------------------------
+
+#Ejercicios martes 01/06/26 en clase en vivo
+
+#1 condicional 
+
+# elija_un_dia_de_semana = int(input('''Elija un dia de la semana: 
+# 1- Lunes, 2-Martes, 3-Miercoles, 4-jueves, 5-Viernes, 6-Sabado, 7-Doming: \n'''))
+
+# if elija_un_dia_de_semana == 1:
+#     print("Corresponde a lunes")
+# elif elija_un_dia_de_semana == 2:
+#     print("Corresponde a Martes")
+# elif elija_un_dia_de_semana == 3:
+#     print("Corresponde a Miércoles")
+# elif elija_un_dia_de_semana == 4:
+#     print("Corresponde a Jueves")
+# elif elija_un_dia_de_semana == 5:
+#     print("Corresponde a Viernes")
+# elif elija_un_dia_de_semana == 6:
+#     print("Corresponde a Sábado")
+# elif elija_un_dia_de_semana == 7:
+#     print("Corresponde a Domingo")
+# else: 
+#     print('No eligio ninguno de los presentados')
+
+#------------------------------------------------------------
+
+#2 match
+
+# dias_de_la_semana = int(input('''Elija un dia de la semana: 
+# 1- Lunes, 2-Martes, 3-Miercoles, 4-jueves, 5-Viernes, 6-Sabado, 7-Doming: \n'''))
+
+# match dias_de_la_semana: 
+#     case 1: 
+#         print("Corresponde a Lunes")
+#     case 2: 
+#         print("Corresponde a Martes")    
+#     case 3: 
+#        print("Corresponde a Miercoles")   
+#     case 4: 
+#         print("Corresponde a Jueves")  
+#     case 5: 
+#         print("Corresponde a Viernes")  
+#     case 6: 
+#         print("Corresponde a Sabado")  
+#     case 7: 
+#         print("Corresponde a Domingo")  
+#     case _: 
+#         print("No eligio ninguno de los presentados")
+
+#------------------------------------------------------------
