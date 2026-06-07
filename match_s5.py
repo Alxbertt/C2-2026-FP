@@ -284,9 +284,3 @@ os.system("cls")
 #         print('Este es un triangulo de tipo: Escaleno')
 # else:
 #     print('No pueden formar un triángulo')
-
-
-
-
-
-
