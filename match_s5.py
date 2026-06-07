@@ -257,7 +257,7 @@ os.system("cls")
 # for caracter in contraseña: 
 #     if caracter.isdigit():
 #         tiene_numero = True
-#     elif caracter.upper():
+#     elif caracter.isupper():
 #         tiene_mayuscula = True
 
 # if len(contraseña) >= 8 and tiene_numero and tiene_mayuscula: 
@@ -284,3 +284,9 @@ os.system("cls")
 #         print('Este es un triangulo de tipo: Escaleno')
 # else:
 #     print('No pueden formar un triángulo')
+
+
+
+
+
+
