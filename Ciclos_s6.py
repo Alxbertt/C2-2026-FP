@@ -57,12 +57,130 @@ os.system("cls")
 
 #Imprime los números del 1 al 20, excepto los que  terminen en 4. Usa continue para lograrlo.
 
-for i in range(1, 21): 
-    if i % 10 == 4: 
-        continue
-    print(i)
+# for i in range(1, 21): 
+#     if i % 10 == 4: 
+#         continue
+#     print(i)
 
+#-------------------------------------------------------------------
+#EJERCICIOS CONTADORES, ACUMULADORES, BANDERA
+#-------------------------------------------------------------------
 
+#1. Introducir 5 números y contar los números pares. Mostrar al usuario la cantidad de numeros pares que se ingresaron
 
+# cantidad_pares = 0
 
+# for i in range(5):
+#     numero = int(input('Ingrese un número: '))
+#     if numero % 2 == 0:
+#         cantidad_pares += 1
+
+# print(f'Se ingresaron {cantidad_pares} números pares.')
+
+#-------------------------------------------------------------------
+
+#2. Haz un programa que solicite al usuario una cantidad n de números a ingresar. Luego, pide los n números y cuenta cuántos son menores que cero. Muestra el total de números negativos al final.
+
+# n_numeros = int(input("¿Cuántos números desea ingresar? "))
+
+# contador_De_numeros_negativos = 0
+
+# for i in range(n_numeros):
+#     numero = int(input("Ingrese un número: "))
+
+#     if numero < 0:
+#         contador_De_numeros_negativos += 1
+
+# print("Cantidad de números negativos:", contador_De_numeros_negativos)
+
+#-------------------------------------------------------------------
+
+#3. Haz un programa que pida las edades de varias personas. El usuario debe indicar cuántas edades ingresará. El programa debe contar cuántas personas son mayores de edad (18 años o más).
+
+# numero_de_edades_a_ingresar = int(input('Cuantas edades desea ingresar? '))
+# n_edades_mayores_18 = 0
+
+# for cantidad in range(numero_de_edades_a_ingresar):
+#     edad_ingresada = int(input('Ingrese una edad: '))
     
+#     if edad_ingresada >= 18:
+#         n_edades_mayores_18 += 1
+# print(f"Hay {n_edades_mayores_18} personas mayores de edad")
+
+#-------------------------------------------------------------------
+
+#Programas con acumulador:
+
+#4. Introducir 5 números y sumar los números pares. Mostrar la usuario la sumatoria de numeros pares que se ingresaron
+
+# numeros_ingresados = 5
+# sumas_pares = 0 
+
+# for i in range(numeros_ingresados):
+#     numero_ingresado = int(input(f'Ingrese un numero: '))
+#     if numero_ingresado  % 2 == 0:
+#         sumas_pares = sumas_pares + numero_ingresado
+
+# print(f"La sumatoria de los numeros pares ingresados previamente da como resultado: {sumas_pares}")
+        
+#-------------------------------------------------------------------
+
+#5. Pide al usuario que introduzca el precio de varios productos uno por uno. El programa debe preguntar después de cada entrada si desea agregar otro producto. Al finalizar, muestra la suma total de los precios.
+
+# suma_productos = 0
+# otro_agregado = "si"
+
+# while otro_agregado == "si":
+#     precios_de_productos = float(input("Introduzca el precio de un productos: "))
+#     suma_productos += precios_de_productos
+
+#     otro_agregado = input('Desea agregar otro producto: si/no: ')
+# print(f"Total a pagar: {suma_productos}")
+
+#-------------------------------------------------------------------
+
+#Programas con bandera:
+
+#6. Introducir 5 números y detener el programa si se ha introducido algún número par. Mostrar al usuario un mensaje diciendo lo que ha pasado.
+
+# cantidad_de_n_a_ingresar = 5
+# encontro_n_par = False
+
+# for numeros in range(cantidad_de_n_a_ingresar):
+#     n = int(input('Favor introducir un numero: '))
+
+#     if n % 2 == 0:
+#         encontro_n_par = True
+#         print("Programa detenido devido al ingreso de un numero par")
+#         break
+
+# if encontro_n_par == False: 
+#     print("No se ingresó ningún número par")
+
+#-------------------------------------------------------------------
+
+#7. Realiza un programa que pida al usuario números enteros de uno en uno. El ciclo debe continuar hasta que el usuario escriba el número 0. Por cada número ingresado, muestra un mensaje indicando que el número fue recibido.
+
+# numero_cero_encontrado = False
+# numero_ingresado = 1
+
+# while numero_ingresado != 0:
+#     numero_ingresado = int(input('Ingrese un numero entero: '))
+    
+#     if numero_ingresado != 0:
+#         print("Numero recibido")
+        
+# if numero_ingresado == 0:
+#     numero_cero_encontrado = True
+#     print("Numero cero detectado cerrando programa...")
+
+#-------------------------------------------------------------------
+
+#8. Escribe un programa que permita al usuario ingresar números positivos. El ciclo debe repetirse mientras la suma total sea menor que 100. Al finalizar, muestra la suma total alcanzada.
+
+# sumador_de_ingresados = 0
+
+# while sumador_de_ingresados < 100:
+#     ingreso_de_numero = int(input("Ingrese un numero: "))
+#     sumador_de_ingresados += ingreso_de_numero
+# print(sumador_de_ingresados)                                
