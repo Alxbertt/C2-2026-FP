@@ -183,4 +183,144 @@ os.system("cls")
 # while sumador_de_ingresados < 100:
 #     ingreso_de_numero = int(input("Ingrese un numero: "))
 #     sumador_de_ingresados += ingreso_de_numero
-# print(sumador_de_ingresados)                                
+# print(sumador_de_ingresados)      
+                          
+#-------------------------------------------------------------------
+#+EJERCICIOS CICLOS
+#-------------------------------------------------------------------
+
+#1.while
+# nombre = input('Ingrese su nombre: ')
+# edad = int(input('Ingrese su edad: '))
+# numero_de_repeticiones = 0
+
+# while numero_de_repeticiones < edad:
+#     print(f'Hola {nombre} como estas?')
+#     numero_de_repeticiones += 1
+#-------------------------------------------------------------------
+#1.for
+# nombre = input('Ingrese su nombre: ')
+# edad = int(input('Ingrese su edad: '))
+
+# for i in range(edad):
+#     print(f'Hola {nombre} como estas?')
+
+#-------------------------------------------------------------------
+
+#2.While
+# nombre = input('Ingrese su nombre: ')
+# edad = int(input('Ingrese su edad: '))
+# contador = 0
+
+
+# if edad > 18:
+#     while contador < edad:
+#         print("Estudia en ITLA")
+#         contador +=1
+# else: 
+#     while contador < 5:
+#         print("Estudia en ITLA")
+#         contador +=1
+
+#-------------------------------------------------------------------
+
+#2.for 
+# nombre = input('Ingrese su nombre: ')
+# edad = int(input('Ingrese su edad: '))
+
+
+# if edad > 18:
+#     for i in range(edad):
+#         print("Estudia en ITLA")
+# else: 
+#    for i in range(5):
+#         print("Estudia en ITLA")
+#-------------------------------------------------------------------
+
+#3.while
+# n = int(input('ingrese un numero: '))
+# contador = 1
+
+# if n == 0:
+#     print('No se permite este nuemro, cerrando programa...')
+# else:
+#     while contador <= n:
+#         print(contador)
+#         contador += 1
+
+#-------------------------------------------------------------------
+#3.For
+# n = int(input('ingrese un numero: '))
+
+# if n == 0:
+#     print('No se permite este nuemro, cerrando programa...')
+# else:
+#     for i in range(1, n + 1):
+#         print(i)
+#-------------------------------------------------------------------
+
+#4.While
+# nombre = input('Ingrese su nombre: ')
+# edad = int(input('Ingrese su edad: '))
+# nacionalidad = input('Ingrese su nacionalidad: ')
+# adivinansa = 0
+
+# contador = 0
+# limite_5 = 5
+# suma = 0
+
+# triple_de_repeticiones = edad * 3
+# numero_secreto = 3
+# contador_de_intentos = 0
+
+# if edad >= 18 and nacionalidad == "dominicana":
+#         while contador < limite_5:
+#             solicitud_de_5_numeros = int(input('Ingrese un numero: '))
+#             suma += solicitud_de_5_numeros
+#             contador += 1
+#         print(suma)
+# elif edad >= 18 and nacionalidad != "dominicana":
+#       while edad > contador: 
+#             contador += 1
+#             print('Visita RD')
+# elif edad < 18 and nacionalidad == "dominicana":
+#       while contador < triple_de_repeticiones:
+#             contador += 1
+#             print('Espera a crecer')
+# elif edad < 18 and nacionalidad != "dominicana":
+#       while adivinansa != numero_secreto:
+#             adivinansa = int(input('Adivine un numero secreto del 1 al 10: '))
+#             contador_de_intentos += 1
+#       print(f"Felicidades lo logro, el numero de intentos fue de:{contador_de_intentos}")
+
+#-------------------------------------------------------------------
+
+#4.for
+# nombre = input('Ingrese su nombre: ')
+# edad = int(input('Ingrese su edad: '))
+# nacionalidad = input('Ingrese su nacionalidad: ')
+
+# sumatoria = 0
+# triple_de_repeticiones = edad * 3
+# numero_secreto = 3
+# contador_intentos = 0
+
+# if edad >= 18 and nacionalidad == "dominicana":
+#       for solicitud_numeros in range(5):
+#             solicitud = int(input('Ingrese un numero: '))
+#             sumatoria += solicitud
+#       print(sumatoria)
+# elif edad >= 18 and nacionalidad != "dominicana":
+#       for numero in range(edad):
+#             print("Visita RD")
+# elif edad < 18 and nacionalidad == "dominicana":
+#       for triple_de_edad in range(triple_de_repeticiones):
+#             print('Espera a crecer')    
+# elif edad < 18 and nacionalidad != "dominicana":
+#       for i in range(1, 11):
+#             contador_intentos +=1
+#             adivinanza = int(input('Adivine un numero secreto del 1 al 10: '))
+            
+#             if adivinanza == numero_secreto:
+#                   print(f"Felicidades lo logro, el numero de intentos fue de:{contador_intentos}")
+#                   break
