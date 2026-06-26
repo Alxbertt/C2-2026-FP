@@ -324,3 +324,121 @@ os.system("cls")
 #             if adivinanza == numero_secreto:
 #                   print(f"Felicidades lo logro, el numero de intentos fue de:{contador_intentos}")
 #                   break
+
+#-------------------------------------------------------------------
+#ASIGNACION #3 (Válida hasta el martes 30/06/2026)
+#-------------------------------------------------------------------
+
+#Ejercicio 1 – Registro de notas 
+
+# suma_notas = 0
+# cantidad_de_notas_ingresadas = 0
+# cantidad_de_notas_igual_o_mayores_a_70 = 0
+
+# nota = int(input('Ingrese sus notas, -1 para finalizar el programa: '))
+
+# while nota != -1:
+
+#     suma_notas += nota
+#     cantidad_de_notas_ingresadas += 1
+
+#     if nota >= 70:
+#         cantidad_de_notas_igual_o_mayores_a_70 += 1
+
+#     nota = int(input('Ingrese sus notas, -1 para finalizar el programa: '))
+
+# print('Cerrando programa...')
+
+# if cantidad_de_notas_ingresadas > 0:
+#     print(f'El promedio fue de: {suma_notas / cantidad_de_notas_ingresadas}')
+
+# print(f'Cantidad de notas mayores o iguales a 70: {cantidad_de_notas_igual_o_mayores_a_70}')
+
+#--------------------------------------------------------------------------------------------------------
+
+#Ejercicio 2 – Tabla de multiplicar personalizada (Para ser realizado con ciclo for)
+
+# numero_ingresado = int(input('Favor introducir un numero: '))
+# contador_par = 0
+# contador_impar = 0
+# resultado = 0
+
+# for i in range(1,13):
+#    resultado = numero_ingresado * i
+#    print(f"{numero_ingresado} x {i} = {resultado}")
+#    if resultado % 2 == 0:
+#     contador_par += 1
+#    else: 
+#      contador_impar += 1
+# print(f"Hubieron {contador_par} numeros pares")
+# print(f"Hubieron {contador_impar} numeros impares")
+
+#--------------------------------------------------------------------------------------------------------
+
+#3 Validacion de contraseña con intentos limitados
+
+# password = 2026
+# intentos = 0 
+# acceso = False 
+# ingreso_password = 0
+
+# while intentos < 3:
+#     ingreso_password = int(input('Ingrese la contraseaña: '))
+#     intentos += 1
+
+#     if password == ingreso_password:
+#         acceso = True
+
+#     if acceso:
+#       print('Acceso concedido')
+#       break
+# if not acceso:
+#     print('Acceso bloqueado')
+
+#--------------------------------------------------------------------------------------------------------
+
+#4 Suma de numeros pares en un rango 
+
+# n_inicial = int(input('Ingrese un numero inicial: '))
+# n_final = int(input('Ingrese un numero final: '))
+# acumulador_par = 0
+
+# for i in range(n_inicial, n_final +1):
+#     print(i)
+
+#     if i % 2 != 0:
+#         continue
+#     acumulador_par += i
+
+# print(f"La suma de los numeros pares da como resultado {acumulador_par}")
+
+#--------------------------------------------------------------------------------------------------------
+
+#Ejercicio 5 – Análisis de números ingresados 
+
+# numero = 1
+# contador_par = 0
+# contador_impar = 0
+# numero_mayor_100 = False
+
+# while numero != 0:
+#     numero = int(input('Ingrese un número positivo (0 para cerrar el programa): '))
+
+#     if numero == 0:
+#         break
+
+#     if numero % 2 == 0:
+#         contador_par += 1
+#     else:
+#         contador_impar += 1
+
+#     if numero > 100:
+#         numero_mayor_100 = True
+
+# if numero_mayor_100:
+#     print('Algún número mayor a 100 fue ingresado ✅')
+# else:
+#     print('No se ingresó ningún número mayor a 100 ❌')
+
+# print(f'La cantidad de números pares fue de: {contador_par}')
+# print(f'La cantidad de números impares fue de: {contador_impar}')
