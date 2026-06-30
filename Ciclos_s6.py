@@ -442,3 +442,125 @@ os.system("cls")
 
 # print(f'La cantidad de números pares fue de: {contador_par}')
 # print(f'La cantidad de números impares fue de: {contador_impar}')
+
+#-------------------------------------------------------------------
+#Practica #3 en clase en vivo (Válida hasta el martes 29/06/2026)
+#-------------------------------------------------------------------
+
+# Ejercicio 1 — Control de Acceso a un Concierto
+
+# Contexto
+# Un promotor de eventos necesita un programa para registrar la entrada de asistentes a un concierto y detectar si hubo menores de edad.
+
+# El programa debe pedir, repetidamente, la edad de cada asistente que va entrando.
+
+# El registro termina cuando ocurra primero una de estas dos condiciones:
+
+# El usuario ingresa -1 (significa que ya no entran más asistentes), o
+# Ya se registraron 10 asistentes (el concierto alcanzó su cupo de prueba para esta simulación).
+# Mientras se registran los asistentes, el programa debe:
+
+# Llevar un contador de cuántos asistentes se han registrado (sin contar el -1).
+# Llevar un acumulador con la suma de todas las edades registradas, para calcular el promedio al final.
+# Mantener una bandera que se active si en algún momento se registra un asistente con edad menor a 18 años.
+# Al finalizar el registro, el programa debe imprimir:
+
+# Cuántos asistentes se registraron en total.
+# El promedio de edad de los asistentes registrados (si no se registró ninguno, evita la división entre cero y muestra un mensaje indicándolo).
+# Si la bandera de menores de edad quedó activada, imprime: "Alerta: se detectaron asistentes menores de edad." En caso contrario, imprime: "Ningún asistente menor de edad detectado."
+# Si el registro terminó porque se llegó al cupo de 10 (no porque el usuario escribió -1), imprime adicionalmente: "Cupo de prueba alcanzado."
+# Estructuras requeridas (obligatorias): while · break · contador · acumulador · bandera
+
+# Pregunta reflexiva
+# ¿Por qué la condición del while no fue suficiente para resolver este ejercicio y fue necesario usar break? ¿Qué hubiera pasado si solo usabas while entrada != -1: sin nada más?
+
+
+# contador_asistentes = 0
+# acumulador_edades = 0
+# hay_menor_de_edad = False
+# edad = 0
+
+# while edad != -1 and contador_asistentes < 10:
+#     edad = int(input('Hey bienvenido al concierto!, favor ingresar su edad: '))
+
+#     if edad == -1:
+#         break
+#     contador_asistentes += 1
+#     acumulador_edades += edad
+#     if edad < 18:
+#         hay_menor_de_edad = True
+
+#     if contador_asistentes == 10:
+#         print("El concierto alcanzó su cupo de prueba para esta simulación.")
+#         break
+# print(f"La cantidad total de asistentes fue de {contador_asistentes}") 
+
+# if contador_asistentes > 0:  
+#     promedio_de_edades = acumulador_edades / contador_asistentes
+#     print(f"La media de edades que asistieron fue de: {promedio_de_edades:.2f}") 
+
+#     if hay_menor_de_edad:
+#         print("Alerta: se detectaron asistentes menores de edad.") 
+#     else: 
+#         print('Ningún asistente menor de edad detectado.')
+# else:
+#     print('No hubo asistentes registrados')
+
+#--------------------------------------------------------------------------
+
+# Ejercicio 2 — Procesamiento de Ventas Diarias
+
+# Contexto
+# Una pequeña tienda quiere registrar las ventas de los 6 turnos de hoy. El cajero digita el monto de cada turno a medida que el programa lo pide. A veces el cajero se equivoca y digita el monto como negativo; esos montos son inválidos y no deben contarse como venta real (pero sí deben quedar contados como errores).
+
+# El programa debe solicitar exactamente 6 montos de venta, uno por uno.
+
+# Para cada venta ingresada:
+
+# Si la venta es negativa, no debe sumarse ni contarse como válida, pero sí debe incrementar un contador de ventas inválidas.
+# Si la venta es válida (≥ 0):
+# Debe sumarse a un acumulador del total de ventas válidas.
+# Debe incrementar un contador de ventas válidas.
+# Si la venta es mayor a RD$1000, debe incrementar además un contador de "ventas grandes".
+# Debe mantenerse una bandera que se active apenas se detecte la primera venta inválida en todo el recorrido.
+# Al finalizar las 6 solicitudes, el programa debe imprimir, en este orden:
+
+# Cantidad de ventas válidas.
+# Total acumulado de ventas válidas.
+# Cantidad de ventas grandes (mayores a RD$1000).
+# Cantidad de ventas inválidas detectadas.
+# Si la bandera quedó activada: "Se detectaron errores de digitación en el registro de ventas." Si no: "No se detectaron errores en el registro de ventas."
+# Estructuras requeridas (obligatorias): for con range() · continue · dos contadores distintos · acumulador · bandera
+
+# Pregunta reflexiva
+# Si en vez de continue hubieras usado un if que envuelve todo el resto del cuerpo del ciclo (sin continue), ¿el resultado final habría sido el mismo? ¿Qué ventaja real (no solo de estilo) tiene usar continue aquí?
+
+# contador_de_ventas_validas = 0
+# contador_de_ventas_invalidas = 0
+# contador_de_ventas_grandes = 0
+# acumulador_del_total_de_ventas_validas = 0
+# por_lo_menos_una_venta_invalida = False 
+
+# for una_venta in range(1, 6 + 1):
+#     monto_de_venta = int(input('Ingrese el monto de la venta: '))
+#     if monto_de_venta < 0:
+#         contador_de_ventas_invalidas += 1
+#         por_lo_menos_una_venta_invalida = True
+#         continue
+#     else: 
+#         contador_de_ventas_validas += 1
+#         acumulador_del_total_de_ventas_validas += monto_de_venta
+
+#     if monto_de_venta > 1000:
+#         contador_de_ventas_grandes += 1
+
+
+# print(f'Ventas validas: {contador_de_ventas_validas}')
+# print(f'TOTAL de ventas validas: {acumulador_del_total_de_ventas_validas}')
+# print(f'Ventas grandes: {contador_de_ventas_grandes}')
+# print(f'Ventas invalidas: {contador_de_ventas_invalidas} ')
+
+# if por_lo_menos_una_venta_invalida:
+#     print('Se detectaron errores de digitación en el registro de ventas.')
+# else:
+#     print("No se detectaron errores en el registro de ventas.")
