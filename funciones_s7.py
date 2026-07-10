@@ -62,3 +62,89 @@ os.system('cls')
 #     print('Es economico ✅')
 # else: 
 #     print('No es economico ❌ ')
+
+#--------------------------------------------------------------------------------
+
+#Ejercicios funciones 2 y validar contraseña mediante funcion con una funcion main() que no contenga la logica de negocio
+
+# def main():
+#     edad = int(input('''!Bienvenido, verifiquemos su edad...
+# Ingresar edad: ''')) 
+    
+#     print(f"De acuerdo a su edad usted es un: {clasificar_edad(edad)}")
+
+#     password = input('Ingrese una contraseña: ')
+
+#     print(validar_password(password))
+
+
+#logica de negocio:
+
+# def clasificar_edad(edad): 
+#     if edad <= 12:
+#         return "niño"
+#     elif 13 <= edad <= 18:
+#         return "adolescente"
+#     else:
+#         return "adulto"
+
+#validar contraseña mediante funcion
+
+# def validar_password (password):
+#     min_8_caracteres = False
+#     al_menos_un_caracter_numerico = False
+#     al_menos_un_caracter_alfabetico_en_mayuscula = False
+#     al_menos_un_caracter_alfabetico_en_minuscula = False
+
+#     if len(password) >= 8: 
+#         min_8_caracteres = True 
+#     for caracter_de_contrasenia in password:
+#         if caracter_de_contrasenia.isdigit():
+#             al_menos_un_caracter_numerico = True
+
+#         if caracter_de_contrasenia.isupper():
+#             al_menos_un_caracter_alfabetico_en_mayuscula = True 
+            
+#         if caracter_de_contrasenia.islower():
+#             al_menos_un_caracter_alfabetico_en_minuscula = True
+
+#     if (min_8_caracteres
+#          and al_menos_un_caracter_alfabetico_en_minuscula
+#          and al_menos_un_caracter_alfabetico_en_mayuscula 
+#          and al_menos_un_caracter_numerico):
+        
+#         return "Contraseña Valida!!!"
+#     else: 
+#         return "Contraseña invalida"
+    
+#llamada de la logica de negocio:
+# main()
+
+#--------------------------------------------------------------------------------
+#EJERCICIOS FUNCIONES 3
+
+# def main():
+#     numero_limite_a_sumar = int(input("Ingrese un número para calcular la suma desde 1 hasta ese número: "))
+#     resultado_suma = suma_hasta_n(numero_limite_a_sumar)
+
+#     print(f"La suma desde 1 hasta {numero_limite_a_sumar} es: {resultado_suma}")
+
+#     numero_a_multiplicar = int(input("Ingrese un número para generar su tabla de multiplicar: "))
+
+#     tabla_de_multiplicar(numero_a_multiplicar)
+
+
+# def suma_hasta_n(numero_limite_a_sumar):
+#     acumulador = 0
+
+#     for i in range(1, numero_limite_a_sumar + 1):
+#         acumulador += i
+
+#     return acumulador
+
+
+# def tabla_de_multiplicar(numero_a_multiplicar):
+#     for i in range(1, 11):
+#         resultado = numero_a_multiplicar * i
+#         print(f"{numero_a_multiplicar} x {i} = {resultado}")
+# main()
